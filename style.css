@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url("Back.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Regular';
+}
+
+.title {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    position:absolute;
+    top:10px;
+    left: 10px;
+    border-radius: 10px;
+    border:none;
+    background-color: beige;
+    padding: 5px 10px;
+}
+
+.Landing {
+    display: none;
+}
+
+.Landing.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    padding:100px 200px;
+    background-color: beige;
+    font-size: 1.5rem;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#start-but {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    padding: 15px 50px;
+    background-color: rgb(220, 121, 16);
+    width: fit-content;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#start-but:hover {
+    background-color: rgb(255, 165, 0);
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid white;
+}
+
+.Area-choose {
+    display: none;
+}
+
+.Area-choose.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 15px;
+    padding: 30px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.shapes {
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    border: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: rgb(220, 121, 16);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.shapes:hover {
+    background-color: rgb(255, 165, 0);
+    cursor: pointer;
+    transform: scale(1.05);
+    border: 2px solid white;
+}
+
+.Area-Circle.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 15px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.Area-Circle {
+    display: none;
+}
+
+.result-circle.active {
+    font-size: 1.2rem;
+}
+
+#radius {
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    background-color: rgb(220, 121, 16);
+    color:rgb(0, 0, 0);
+}
+
+.Area-Rectangle.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 15px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.Area-Rectangle {
+    display: none;
+}
+
+.result-rectangle.active {
+    font-size: 1.2rem;
+}
+
+#length, #width {
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    background-color: rgb(220, 121, 16);
+    color:rgb(0, 0, 0);
+}
+
+.Area-Triangle.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    border-radius: 15px;
+    padding: 30px;
+    gap: 20px;
+}
+
+.Area-Triangle {
+    display: none;
+}
+
+.result-triangle.active {
+    font-size: 1.2rem;
+}
+
+#base, #height {
+    border-radius: 10px;
+    border:none;
+    padding: 10px;
+    background-color: rgb(220, 121, 16);
+    color:rgb(0, 0, 0);
+}
+
+.back-button{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    border:none;
+    background-color: beige;
+    padding: 5px 10px;
+    font-family: "Franklin Gothic Regular";
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: rgb(220, 121, 16);
+    cursor: pointer;
+    transform: scale(1.05);
+    color: white;
+}

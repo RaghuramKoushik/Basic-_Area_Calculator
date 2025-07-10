@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Area Calculator">
+    <title>Area Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="title"><h1>Area Calculator</h1></div>
+    <div class="Landing active">
+        <h1>Welcome!</h1>
+        <button id="start-but"><b>Let's Go</b></button>
+    </div>
+
+    <div class="Area-choose">
+        <button class="shapes circle">
+            <img src="Circle.png" alt="Circle" width="80px">
+            <div class="shape-label">Circle</div>
+        </button>
+        <button class="shapes rectangle">
+            <img src="Rectangle.webp" alt="Rectangle" width="80px">
+            <div class="shape-label">Rectangle</div>
+        </button>
+        <button class="shapes triangle">
+            <img src="Triangle.webp" alt="Triangle" width="80px">
+            <div class="shape-label">Triangle</div>
+        </button>
+    </div>
+
+    <div class="Area-Circle">
+        <img src="Circle.png" alt="Circle" width="100px">
+        <input type="number" id="radius" placeholder="Enter radius in cm">
+        <div class="result-circle"><p></p></div>
+        <button class="back-button">Back</button>
+    </div>
+
+    <div class="Area-Rectangle">
+        <img src="Rectangle.webp" alt="Rectangle" width="100px">
+        <input type="number" id="length" placeholder="Enter length in cm">
+        <input type="number" id="width" placeholder="Enter width in cm">
+        <div class="result-rectangle"><p></p></div>
+        <button class="back-button">Back</button>
+    </div>
+
+    <div class="Area-Triangle">
+        <img src="Triangle.webp" alt="Triangle" width="100px">
+        <input type="number" id="base" placeholder="Enter base in cm">
+        <input type="number" id="height" placeholder="Enter height in cm">
+        <div class="result-triangle"><p></p></div>
+        <button class="back-button">Back</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
